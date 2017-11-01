@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- Custom styles for this template -->
+   <link href="main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-toggleable-md navbar-custom fixed-top" id="navbar-custom">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars" id="custom-toggle-button"></span>
+                </button>
+            <a class="navbar-brand" href="{{ url_for("home")}}">Yummy Recipes</a>
+			
+           
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for("home")}}"><i class="fa fa-home"></i> Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for("get_recipes") }}"><i class="fa fa-coffee"></i> Recipes</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> {{ user.firstname }}</a>
+						
+                        <div class="dropdown-menu navbar-custom custom-dropdown" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="/logout">Log Out</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+           
+        
+    </nav>
+
+</body>
+
+</html>
