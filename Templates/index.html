@@ -1,44 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="css/index-style.css">
-  <title>The Recipes Store</title>
-</head>
-<body>
 
-<div class="topnav" id="myTopnav">
-  <a href="user_home.html">Home</a>
-  <a href="#About us">About us</a>
-  <a href="#contact us">contact us</a>
-  <a href="login_page.html">Login</a>
-  <a href="#Signup">Signup</a>
-</div> 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 justify-content-center text-center">
-                <h1>Welcome to the Recipes Store</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Yummy Recipes</title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+            <!-- header begins -->
+            <div class="masthead">
+                <h3>Yummy Recipes</h3>
+                <nav>
+                    <ul class="nav nav-justified">
+                        <li class="active">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Projects</a>
+                        </li>
+                        <li>
+                            <a href="login.html">Login</a>
+                        </li>
+                        <li>
+                            <a href="registration.html">Sign up</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="col-md-4 justify-content-right text-right">
-                <a href="login_page.html"><button type="submit" class="btn btn-primary">Log In</button></a>
-                <a href="register_page.html"><button type="submit" class="btn btn-success">Sign Up</button></a>
+            <!-- header ends  -->
+
+            <!-- Recipe banner begins -->
+            <div class="jumbotron">
+                <h1>Yummy Recipes for you!!!</h1>
+                <img src="assets/images/recipe1.png" alt="">
+                <p class="lead">
+                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                    nibh, ut fermentum massa justo sit amet.
+                </p>
+                <a class="btn btn-success" href="registration.html">Create Account</a>
             </div>
+            <!--banner ends -->
+            <!-- recipes section begins-->
+            <div class="row">
+                <div class="col-md-4">
+                    <h1>Recipe One</h1>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                        condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
+                        euismod. Donec sed odio dui. </p>
+                </div>
+                <div class="col-md-4">
+                    <h1>Recipe Two</h1>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                        condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
+                        euismod. Donec sed odio dui. </p>
+                </div>
+                <div class="col-md-4">
+                    <h1>Recipe Three</h1>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                        condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
+                        euismod. Donec sed odio dui. </p>
+                </div>
+            </div>
+            <!-- recipes section ends -->
+
+            <!-- footer begins -->
+            <!-- Site footer -->
+            <footer class="footer">
+                <p>&copy; 2017 Yummy Recipes, Inc.</p>
+            </footer>
+            <!-- footer ends -->
         </div>
-        <main>
-            <h2 class="text-center">
-                The Recipes Store allows you to keep all your recipes in one place. 
-            </h2>
-            <p class="text-center">Share them with friends and family!</p>
-                <a href="register_page.html">
-                    <button type="submit" class="btn btn-success btn-bottom">Sign Up</button>
-                </a>
-            <p class="text-center">
-                Already using the Recipes Store? <a class="link" href="login_page.html">Log In</a>
-            </p>
-        </main>
-    </div>
-</body>
+
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+    </body>
+
 </html>
